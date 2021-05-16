@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Products from './components/Products'
 import About from './components/About'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 const App = () => {
     const [loading, setLoading] = useState(false)
@@ -40,6 +41,7 @@ const App = () => {
                     <Products />
                     <About />
                     <Contact />
+                    <Footer />
                 </>
             }
         </div>
