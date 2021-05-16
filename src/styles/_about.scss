@@ -6,9 +6,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 30px 5% 40px 5%;
+	padding: 30px 8% 40px 8%;
     position: relative;
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
+
+    @media(max-width:1190px){
+        padding: 30px 5% 40px 5%;
+    }
 
     @media(max-width:970px){
         flex-direction: column;
@@ -90,7 +94,9 @@
     }
 
     .about-image{
-        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         @media(max-width:970px){
             width: 100%;
