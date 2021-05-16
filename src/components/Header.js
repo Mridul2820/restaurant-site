@@ -11,7 +11,7 @@ const Header = () => {
                 </h1>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <div className="header-btns">
-                    <a href="#" className="header-btn">Order</a>
+                    <a href="/" className="header-btn">Order</a>
                 </div>
             </div>
         </div>

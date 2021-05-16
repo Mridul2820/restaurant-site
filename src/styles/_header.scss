@@ -6,26 +6,60 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../assets/banner.png');
+    background-position: 0 0;
+
+    @media(max-width:1190px){
+        background-size: 1150px !important;
+        background-position: -10%;
+    }
+
+    @media(max-width:970px){
+        height: 650px;
+        background-position: 50%;
+    }
+    
+    @media(max-width:600px){
+        height: 700px;
+    }
 }
 
 .header-heading{
 	font-family: 'Montserrat';
-	width: 900px;
+	max-width: 900px;
+    width: 100%;
 	position: absolute;
     left: 25%;
     top: 55%;
     text-align: left;
 	transform: translate(-25%,-55%);
 
-    span{
-        font-family: 'Alfa Slab One';
-        color: #bf2222;
-        border-bottom: 2px solid #3d2514;
+    @media(max-width:1190px){
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    @media(max-width:970px){
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        padding-left: 40px;
+    }
+
+    @media(max-width:600px){
+        width:90%;
+        top: 30%;
+        transform: translate(-50%,-30%);
+        padding-left: 10px;
     }
 
     .details{
         font-size: 23px;
         color: #181818;
+
+        @media(max-width:1190px){
+            font-size: 1rem;
+        }
     }
 
     h3{
@@ -34,6 +68,10 @@
         margin:0px;
         letter-spacing: 2px;
         color:#3d2514;
+
+        @media(max-width:1190px){
+            font-size: 1.5rem;
+        }
     }
 
     h1{
@@ -42,30 +80,50 @@
         margin:0px;
         letter-spacing: 2px;
         color:#3d2514;
+
+        @media(max-width:1190px){
+            font-size: 3rem;
+        }
+
+        span{
+            font-family: 'Alfa Slab One';
+            color: #bf2222;
+            border-bottom: 2px solid #3d2514;
+        }
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    .header-btns{
+        display: flex;
+        margin-top: 40px;
+    
+        @media(max-width:1100px){
+            margin: 0;
+        }
+    }
+    
+    .header-btn{
+        width:160px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        font-family:'Lato';
+        background-color: #bf2222;
+        box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
+        border-radius: 5px;
+        color:#ffffff;
+    
+        &:hover{
+            background-color: transparent;
+            transition: all ease 0.5s;
+            color: #3d2514;
+            border: 2px solid #bf2222;
+        }
     }
 }
 
-.header-btns{
-    display: flex;
-    margin-top: 40px;
-}
-.header-btn{
-	width:160px;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-    align-items: center;
-    font-size: 1.4rem;
-    font-family:'Lato';
-    background-color: #bf2222;
-    box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
-    border-radius: 5px;
-	color:#ffffff;
-
-    &:hover{
-        background-color: transparent;
-        transition: all ease 0.5s;
-        color: #3d2514;
-        border: 2px solid #bf2222;
-    }
-}
