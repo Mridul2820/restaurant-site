@@ -25,6 +25,11 @@
             margin-bottom: 50px;
             font-size: 3rem;
         }
+
+        @media (max-width: 500px) {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
     }
 
     form{
@@ -47,9 +52,13 @@
             padding: 10px;
             border: none;
             outline: none;
-            background-color: #110c09;
+            background-color: rgba($color: #110c09, $alpha: .7);
             color: #ffffff;
             border-radius: 5px;
+
+            &::placeholder {
+                color: #ffffff;
+            }
         }
 
         textarea{
