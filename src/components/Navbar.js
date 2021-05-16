@@ -33,8 +33,8 @@ const Navbar = () => {
                 <span className="nav-icon"></span>
             </label>
             <ul className="menu">
-                <li><Link to="#">Header</Link></li>
-                <li><Link to="#">Products</Link></li>
+                <li><Link to="#main">Header</Link></li>
+                <li><Link to="#products">Products</Link></li>
                 <li><Link to="#">About</Link></li>
                 <li><Link to="#">Contact</Link></li>
             </ul>

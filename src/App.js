@@ -4,6 +4,7 @@ import './styles/app.scss'
 import { css } from '@emotion/core'
 import HashLoader from 'react-spinners/HashLoader'
 import Header from './components/Header'
+import Products from './components/Products'
 
 const App = () => {
     const [loading, setLoading] = useState(false)
@@ -34,6 +35,7 @@ const App = () => {
                 <>
                     <Navbar />
                     <Header />
+                    <Products />
                 </>
             }
         </div>
